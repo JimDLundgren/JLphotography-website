@@ -1,0 +1,71 @@
+:root { 
+  --container-padding-general: 50px; 
+} /* Declare variables that can be used with var() */
+
+body{
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: helvetica, arial, sans-serif; /* 1st, 2nd, 3rd choice */
+  font-size: 20px;
+  line-height: 1.5em;
+  height: 100%;
+  margin: 0;
+}
+
+.container{/* . for class, # for id */
+  margin: auto;
+  overflow: hidden; /* no scrollbar if text goes outside its container */
+}
+
+#navbar{
+  background-color: #222;
+  color: white;
+  width: 100%;
+  position: fixed; /* Object will stay at same position even if scrolling */
+}
+
+#navbar ul{
+  padding: 0;
+  list-style: none; /* no bullets */
+}
+
+#navbar li{
+  display: inline; /* put list in a row (inline), column is default */
+}
+
+#navbar a{
+  color: white;
+  text-decoration: none; /* Remove link underline */
+  font-size: 25px;
+  padding-left: 25px;
+}
+
+.container img{
+  width: 100%; /* Set image width to 100% of the container */
+}
+
+#homepage-main{
+  text-align: center;
+  font-style: italic;
+  padding-bottom: var(--container-padding-general);
+  padding-top: var(--container-padding-general);
+}
+
+#copyright-footer{
+  /*
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  */
+  /* Lines above make the footer stay at bottom, not sure if best way tho */
+  /* Atually, setting height: 100% in body seems to work too */
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+@media(max-width:500px){
+/* Anything put in here will take affect if width is less than 500px */
+}

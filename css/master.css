@@ -24,9 +24,19 @@ body{
   position: fixed; /* Object will stay at same position even if scrolling */
 }
 
+#navbar .container{
+  display: flex;
+}
+
+#navbar #company-brand{
+  margin-left: 25px;
+}
+
 #navbar ul{
   padding: 0;
   list-style: none; /* no bullets */
+  margin-top: 25px;
+  padding-left: 100px;
 }
 
 #navbar li{
@@ -37,9 +47,10 @@ body{
   color: white;
   text-decoration: none; /* Remove link underline */
   font-size: 25px;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 
+/* TODO: Change so not all images are affected by the width below */
 .container img{
   width: 100%; /* Set image width to 100% of the container */
 }
@@ -52,18 +63,33 @@ body{
 }
 
 #copyright-footer{
-  /*
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  */
-  /* Lines above make the footer stay at bottom, not sure if best way tho */
-  /* Atually, setting height: 100% in body seems to work too */
   text-align: center;
   background-color: #333;
   color: white;
   padding: 10px;
+}
+
+/* TODO: update to display preview better */
+#photos{
+  padding: 150px;
+}
+
+.photo-preview{
+  display: flex;
+  padding: 50px;
+  margin: 0;
+}
+
+.photo-preview img{
+  height: 200px;
+  width: 400px;
+  min-height: 200px;
+  min-width: 400px;
+  margin-right: 50px;
+}
+
+.photo-specs{
+  margin-left: 50px;
 }
 
 @media(max-width:500px){

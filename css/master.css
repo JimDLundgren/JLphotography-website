@@ -44,10 +44,14 @@ body{
 }
 
 #navbar a{
-  color: white;
+  color: #666;
   text-decoration: none; /* Remove link underline */
   font-size: 25px;
   padding-left: 40px;
+}
+
+#navbar .current a{
+  color: white;
 }
 
 /* TODO: Change so not all images are affected by the width below */

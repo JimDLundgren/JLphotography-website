@@ -54,7 +54,6 @@ body{
   color: white;
 }
 
-/* TODO: Change so not all images are affected by the width below - DONE? */
 .container #hompage-img{
   width: 100%; /* Set image width to 100% of the container */
 }
@@ -74,6 +73,8 @@ body{
 }
 
 /* TODO: update to display preview better */
+/* TODO: Add this back when adding list view */
+/*
 #photos{
   padding: 150px;
 }
@@ -91,13 +92,32 @@ body{
   min-height: 200px;
   min-width: 400px;
   margin-right: 50px;
-  /*flex: 1;*/
 }
 
 .photo-specs{
   margin-left: 50px;
-  /*flex: 1;*/
 }
+*/
+
+/* TODO: photos are jumping slightly when moving between them
+   - find out why and fix. */
+.photo-container{
+  margin: auto;
+  max-width: 50%;
+  padding-top: 100px;
+}
+
+.selected-img img,
+.grid-imgs img {
+  width: 100%;
+}
+
+.grid-imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* same as "1fr 1fr 1fr 1fr" */
+  grid-gap: 5px;
+}
+
 
 @media(max-width:500px){
 /* Anything put in here will take affect if width is less than 500px */

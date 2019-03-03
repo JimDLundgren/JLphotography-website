@@ -54,8 +54,8 @@ body{
   color: white;
 }
 
-/* TODO: Change so not all images are affected by the width below */
-.container img{
+/* TODO: Change so not all images are affected by the width below - DONE? */
+.container #hompage-img{
   width: 100%; /* Set image width to 100% of the container */
 }
 
@@ -82,18 +82,21 @@ body{
   display: flex;
   padding: 50px;
   margin: 0;
+  justify-content: center;
 }
 
-.photo-preview img{
+.photo-preview #photo-preview-img{
   height: 200px;
   width: 400px;
   min-height: 200px;
   min-width: 400px;
   margin-right: 50px;
+  /*flex: 1;*/
 }
 
 .photo-specs{
   margin-left: 50px;
+  /*flex: 1;*/
 }
 
 @media(max-width:500px){
